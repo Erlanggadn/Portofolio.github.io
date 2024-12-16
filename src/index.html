@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="logobg.png" type="image/x-icon"> -->
+    <title>Portofolio Saya</title>
+</head>
+
+<body>
+    <header class=" sticky top-0 z-10 bg-white text-lg font-sans ">
+        <div class="container mx-auto flex items-center justify-start py-4 px-6 lg:justify-center ">
+            <!-- Hamburger Icon for Mobile -->
+            <div class="lg:hidden">
+                <button id="hamburger" class="text-blue-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigation Links (Visible on desktop) -->
+            <nav class="hidden lg:flex space-x-8">
+                <a href="#tentang-yayasan"
+                    class="hover:text-blue-700 font-medium hover:border-b-2 hover:border-blue-700">Tentang Saya</a>
+                <a href="#kegiatan"
+                    class="hover:text-red-500 font-medium hover:border-b-2 hover:border-red-500">Resume</a>
+                <a href="#pendaftaran"
+                    class="hover:text-blue-700 font-medium hover:border-b-2 hover:border-blue-700">Pengalaman</a>
+                <a href="#kontak"
+                    class="hover:text-red-500 font-medium hover:border-b-2 hover:border-red-500">Kontak</a>
+            </nav>
+            <!-- Dropdown Menu for Mobile (Hidden by default) -->
+            <div id="mobile-menu"
+                class="lg:hidden hidden absolute top-16 bg-white shadow-md py-4 px-6 rounded-lg space-y-4 ">
+                <!-- Navigasi Vertikal -->
+                <a href="#tentang-yayasan" class="block hover:text-blue-700 font-medium">Tentang Saya</a>
+                <a href="#pengurus" class="block hover:text-red-500 font-medium">Resume</a>
+                <a href="#kegiatan" class="block hover:text-blue-700 font-medium">Pengalaman</a>
+                <a href="#pendaftaran" class="block hover:text-red-500 font-medium">Kontak</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 ">
+        <section id="selamat-datang" class="relative" data-aos="fade-up" data-aos-duration="1000">
+            <!-- Background Shape (Oval, Smaller & Faded) -->
+            <div
+                class="absolute top-0 left-0 w-3/4 h-3/4 z-[-1] bg-blue-500 rounded-full opacity-20 transform -translate-x-1/2 -translate-y-1/2">
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-between" data-aos="fade-up"
+                data-aos-duration="1000">
+                <!-- Text Content -->
+                <div class="order-1 md:order-1 md:w-1/2 text-start md:text-left justify-start items-start">
+                    <h3 class="text-5xl font-bold text-blue-500 mb-4">Hi,</h3>
+                    <h1 class="text-6xl font-bold mb-6">
+                        <span class="text-gray-800">I'm</span>
+                        <span class="text-blue-500">Muhammad Erlangga</span>
+                    </h1>
+                    <h2 class="text-3xl font-semibold text-gray-700 mb-10">
+                        <span id="typed-text">Web Developer</span>
+                    </h2>
+                    <!-- Buttons -->
+                    <div class="flex items-center space-x-4">
+                        <a href="#tentang-yayasan"
+                            class="bg-blue-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-red-500 flex items-center space-x-2 w-fit">
+                            <span>Tentang Saya</span>
+                            <ion-icon size="large" name="arrow-forward-outline"></ion-icon>
+                        </a>
+                        <a href="#hire-me"
+                            class="bg-red-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-blue-500 flex items-center space-x-2 w-fit">
+                            <span>Hire Me</span>
+                            <ion-icon size="large" name="megaphone-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Logo/Image -->
+                <div class="order-2 md:order-2 md:w-1/3">
+                    <img src="../foto/formal2.png" alt="Kegiatan Yayasan" class="mx-auto md:mb-0">
+                </div>
+            </div>
+            <!-- Portofolio Divider -->
+            <div class="relative  flex items-center justify-center">
+                <div class="absolute inset-0 border-t border-blue-500"></div>
+                <span class="relative text-xl font-semibold text-blue-500 bg-white px-4">2024</span>
+            </div>
+            <div class="py-14"></div>
+        </section>
+
+        <section id="tentang-yayasan" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl  font-bold text-center text-purple-700 mb-8 ">Tentang Yayasan</h2>
+                <!-- Bagian Foto dan Slider -->
+                <div class="mb-12 py-9 flex justify-center">
+                    <div class="swiper w-full max-w-2xl shadow-2xl">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide flex justify-center">
+                                <img src="tentang/foto1.jpeg" alt="Kegiatan 1"
+                                    class="w-full h-80 object-cover rounded-lg shadow-md">
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="tentang/foto2.jpeg" alt="Kegiatan 2"
+                                    class="w-full h-80 object-cover rounded-lg shadow-md">
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="kegiatan/jakarta/foto2.jpg" alt="Kegiatan 3"
+                                    class="w-full h-80 object-cover rounded-lg shadow-md">
+                            </div>
+                            <div class="swiper-slide flex justify-center">
+                                <img src="kegiatan/jakarta/foto1.jpg" alt="Kegiatan 3"
+                                    class="w-full h-80 object-cover rounded-lg shadow-md">
+                            </div>
+                        </div>
+                        <!-- Tombol Navigasi -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <!-- Bagian Penjelasan -->
+                <div class="text-gray-700 font-serif text-lg text-justify  data-aos=" fade-up" data-aos-duration="1000"">
+                    <p class=" font-semibold text-purple-700 py-2">Akta Pendirian Yayasan <span
+                        aria-hidden="true">→</span></p>
+                    <p class="mb-4 justify-start text-justify py-2">
+                        Yayasan Raudhatul Quran Bunayyah
+                        dikeluarkan oleh kementerian Hak dan Asasi Manusia
+                        Daftar Yayasan Nomor <b class="font-mono">AHU-0018468.AH.01.12</b> Tahun 2023 Pada Tanggal 14
+                        Agustus 2023.
+                    </p>
+                    <div class="flex justify-center items-center">
+                        <img src="logobg.png" alt="Kegiatan Yayasan" class="w-80 h-auto">
+                    </div>
+                    <p class="font-semibold text-purple-700 py-2">Arti Logo <span aria-hidden="true">→</span></p>
+                    <div class="mb-4 justify-start text-justify py-2 space-y-4">
+                        <p class="font-semibold">1. Kaligrafi Bunayyah</p>
+                        <ul class="list-disc pl-5">
+                            <li>Kaligrafi di tengah melambangkan identitas utama lembaga sebagai pusat pendidikan
+                                Al-Qur’an.</li>
+                            <li>Bunayyah berarti “fondasi kecil”, yang mengacu pada pembangunan generasi penerus dengan
+                                dasar ilmu agama yang kuat.</li>
+                            <li>Bentuk kaligrafi yang modern menunjukkan yayasan bunayyah dapat beradaptasi dengan
+                                lingkungan modern.</li>
+                        </ul>
+
+                        <p class="font-semibold">2. Al-Qur’an di Bawah Kubah</p>
+                        <ul class="list-disc pl-5">
+                            <li>Melambangkan ketakwaan dan ketawadhuan saat mempelajari Al-Qur’an.</li>
+                            <li>Buku terbuka menggambarkan bahwa Al-Qur’an adalah panduan hidup yang menjadi inti
+                                pendidikan di lembaga ini.</li>
+                        </ul>
+
+                        <p class="font-semibold">3. Warna Keemasan</p>
+                        <ul class="list-disc pl-5">
+                            <li>Simbol kejayaan, kemuliaan, dan kehormatan.</li>
+                            <li>Menggambarkan harmoni antara sesama manusia, serta keberkahan dalam hidup bagi mereka
+                                yang mempelajari dan mengamalkan Al-Qur’an.</li>
+                        </ul>
+
+                        <p class="font-semibold">4. Warna Ungu</p>
+                        <ul class="list-disc pl-5">
+                            <li>Melambangkan kemuliaan, spiritualitas, dan ketenangan jiwa.</li>
+                            <li>Memberikan nuansa kesungguhan dalam belajar, sekaligus menonjolkan kedalaman ilmu yang
+                                diajarkan.</li>
+                            <li>Ungu juga mencerminkan elegansi lembaga, menjadikannya pusat pembelajaran Al-Qur’an yang
+                                dihormati dan eksklusif.</li>
+                        </ul>
+
+                        <p class="font-semibold">5. Masjid dengan Kubah</p>
+                        <ul class="list-disc pl-5">
+                            <li>Masjid adalah simbol rumah ibadah dan pusat ilmu dalam Islam, tempat bertemunya umat
+                                untuk menimba ilmu dan mendekatkan diri kepada Allah.</li>
+                            <li>Kubah melambangkan perlindungan ilahi, mencerminkan bahwa pembelajaran Al-Qur’an di
+                                lembaga ini berlandaskan iman dan ketakwaan.</li>
+                            <li>Cahaya di atas kubah menunjukkan bahwa Al-Qur’an memberikan cahaya kehidupan yang
+                                menerangi jalan umat menuju keselamatan dunia dan akhirat.</li>
+                        </ul>
+
+                        <p class="font-semibold">6. Segi Delapan</p>
+                        <ul class="list-disc pl-5">
+                            <li>Simbol keseimbangan dan keselarasan.</li>
+                            <li>Mencerminkan tujuan pendidikan lembaga untuk mencetak generasi yang harmonis dalam
+                                hubungannya dengan Allah, sesama manusia, dan lingkungan.</li>
+                            <li>Segi delapan juga melambangkan kejayaan umat Islam yang berlandaskan Al-Qur’an.</li>
+                        </ul>
+                    </div>
+                    <p class=" font-semibold text-purple-700 py-2">Visi <span aria-hidden="true">→</span></p>
+                    <p class="mb-4 justify-start text-justify py-2">
+                        Mencetak generasi qur'an yang berkualitas yang berpegang teguh pada alqur'an dan sunnah sesuai
+                        dengan pemahaman salafus soleh yang menggabungkan IMTAQ, beradab dan berakhlak mulia, cerdas
+                        terampil dengan bakat dan kemampuan yang baik.
+                    </p>
+                    <p class=" font-semibold text-purple-700 py-2 ">Misi <span aria-hidden=" true">→</span></p>
+                    <ul class="list-decimal list-inside space-y-2 py-2 ">
+                        <li>Menyelenggarakan pendidikan ilmu Alqur'an dan ilmu syari dengan menjadikan lulusan yang
+                            hafal Alqur'an dengan Bersanad. </li>
+                        <li>Menjadikan lulusan siap berdakwah yang sesuai dalam bidang Alqur'an</li>
+                        <li>Membangun sistem pendidikan ilmu Alqur'an berbasis dakwah yang berkualitas</li>
+                        <li>Mengoptimalkan pembelajaran Alqur'an dan pendidikan agama islam secara kaffah</li>
+                        <li>Menghasilkan generasi Alqur'an yang berakhlak tinggi menjunjung nilai nilai adab dalam
+                            perilaku dan interaksi sosial ditengah masyarakat sepenuhnya.</li>
+                    </ul>
+                    <p class="font-semibold  text-purple-700 py-2">Program berkembang <span aria-hidden="true">→</span>
+                    </p>
+                    <p class="mb-4 justify-start text-justify py-2">
+                        RBAA Bunayyah Adalah Lembaga Alquran Dan pembelajaran Ilmu Syar'i didirikan Oleh Ustadzah
+                        Masayu Zulaiha Pada Tahun 2000 Dan berkembang menjadi Sebuah Yayasan Raudhatul Quran
+                        Bunayyah Dibawah Dewan Penasihat Ustadz Muchtar Aziz,S.Ag Alumni STDIE Imam Assyafii Jember
+                    </p>
+                    <ul class="list-decimal list-inside space-y-2 py-2 ">
+                        <li>Ilmu Al-Quran</li>
+                        <li>Ilmu Bahasa Arab</li>
+                        <li>Ilmu Syar'i</li>
+                    </ul>
+                    <p class="font-semibold  text-purple-700 py-2">Sistem Pembelajaran <span aria-hidden="true">→</span>
+                    </p>
+                    <p class="py-4 justify-around text-justify">
+                        Program Mulazamah Tuntas Adalah Program pembelajaran Dari Level Pemula sampai Level Mahir
+                        dengan Panduan Kitab Ahkam Tajwid. Dirancang secara sistematis, nyaman, dan mudah diikuti.
+                        Didukung oleh Pengampu Yang mumpuni dibidangnya. Insya Allah biidznillah...
+                    </p>
+                    <ul class="list-decimal list-inside space-y-2 py-2 mb-4">
+                        <li>Kelas Dimulai Dari Level Pemula</li>
+                        <li>Tadrib (Praktek) & Pemaparan Materi</li>
+                        <li>Akses Belajar Via ZOOM Premium</li>
+                        <li>Halaqah Dilaksanakan 2X Dalam Sepekan</li>
+                        <li>Ujian Akhir Bagi Seluruh Peserta</li>
+                        <li>Kelas Terdiri dari kelas Tadrib dan Kelas Tajwid.</li>
+                    </ul>
+                    <p class=" font-semibold  text-purple-700">Benefit <span aria-hidden="true">→</span></p>
+                    <ul class="list-decimal list-inside space-y-2 py-2 ">
+                        <li>Pengampu Bersanad Kitab Tajwid</li>
+                        <li>Ilmu Yang Bermanfaat</li>
+                        <li>Teman Sholiha</li>
+                        <li>Sertifikat Setiap Level</li>
+                        <li>Kaderisasi Muaa'llimaat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-36"></div>
+        </section>
+        <section id="pengurus" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container mx-auto px-4  data-aos=" fade-up" data-aos-duration="1000"">
+                <h2 class=" text-4xl font-bold text-center text-purple-700 mb-8">Pengurus Yayasan</h2>
+                <!-- Card Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Pembina</h3>
+                        <p class="text-lg text-gray-700">Ustadzah Masayu Zulaiha, SE</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Ketua Yayasan</h3>
+                        <p class="text-lg text-gray-700">Ustadz M. Arif Aji Nugroho, S. Ag</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Dewan Penasehat</h3>
+                        <p class="text-lg text-gray-700">Ustadz Muchtar Aziz, S. Ag</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Tim Dakwah</h3>
+                        <p class="text-lg text-gray-700">Ustadz Kiki Erik Alfitra, S. Pd</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Ketua Nadzir Wakaf</h3>
+                        <p class="text-lg text-gray-700">Ustadz Abdurrohman Ahmad Mubarok, SH</p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Tim Manager Pengembangan Pembangunan</h3>
+                        <p class="text-lg text-gray-700">Ustadz Hermanto</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Penasihat Hukum</h3>
+                        <p class="text-lg text-gray-700">Dr. Novriansyah Bastarie SH. MH</p>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Sekretaris</h3>
+                        <p class="text-lg text-gray-700">Wili Sukarti, S. Pd. I</p>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Bendahara</h3>
+                        <p class="text-lg text-gray-700">Febriani</p>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Humas</h3>
+                        <p class="text-lg text-gray-700">Wiwin Winarti, SE</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto flex items-center justify-center">
+                            <!-- Ikon orang ketika foto kosong -->
+                            <i class="fas fa-user-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Tim Sosial</h3>
+                        <p class="text-lg text-gray-700">Siti Nurliah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-36"></div>
+        </section>
+        <section id="kegiatan" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container mx-auto px-4 py-2">
+                <h2 class="text-4xl font-bold text-center text-purple-700 mb-8">Kegiatan Yayasan</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Online -->
+                    <div class="bg-white shadow-lg rounded-lg p-4">
+                        <!-- Swiper Container -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/online/foto1.jpg" alt="Gambar Kegiatan" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/online/foto2.jpg" alt="Gambar Kegiatan" class="rounded-lg">
+                                </div>
+                            </div>
+                            <!-- Swiper Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Deskripsi -->
+                        <h3 class="text-xl font-semibold text-purple-700 mt-4">Center Online</h3>
+                        <p class="text-gray-500 mt-2">Pembelajaran Via Zoom online Mencakup
+                            Untuk Kelas Akhwat & Ikhwan.</p>
+                        <button onclick="openModal('centerOnline')"
+                            class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">
+                            Baca Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Jakarta-->
+                    <div class="bg-white shadow-lg rounded-lg p-4">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/jakarta/foto1.jpg" alt="Gambar Kegiatan" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/jakarta/foto2.jpg" alt="Gambar Kegiatan 2" class="rounded-lg">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-purple-700 mt-4">Center Offline Jakarta</h3>
+                        <p class="text-gray-500 mt-2">Kegiatan offline untuk pembelajaran di Jakarta, Pembelajaran Via
+                            Offline Mencakup
+                            Untuk Kelas Akhwat & Ikhwan.</p>
+                        <button onclick="openModal('centerJakarta')"
+                            class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">
+                            Baca Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Muara Enim -->
+                    <div class="bg-white shadow-lg rounded-lg p-4">
+                        <!-- Swiper Container -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/muaraenim/foto1.jpg" alt="Gambar Kegiatan" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/muaraenim/foto2.jpg" alt="Gambar Kegiatan 2" class="rounded-lg">
+                                </div>
+                            </div>
+                            <!-- Swiper Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Deskripsi -->
+                        <h3 class="text-xl font-semibold text-purple-700 mt-4">Center Offline Muara Enim</h3>
+                        <p class="text-gray-600 mt-2">Pembelajaran Via Offline Mencakup
+                            Untuk Kelas Akhwat & Ikhwan.</p>
+                        <button onclick="openModal('centermuaraenim')"
+                            class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">
+                            Baca Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Lubuk Linggau -->
+                    <div class="bg-white shadow-lg rounded-lg p-4">
+                        <!-- Swiper Container -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/lubuklinggau/foto2.jpg" alt="Gambar Kegiatan" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/lubuklinggau/foto3.jpg" alt="Gambar Kegiatan 2"
+                                        class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/lubuklinggau/foto4.jpg" alt="Gambar Kegiatan 2"
+                                        class="rounded-lg">
+                                </div>
+                            </div>
+                            <!-- Swiper Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Deskripsi -->
+                        <h3 class="text-xl font-semibold text-purple-700 mt-4">Center Offline Lubuk Linggau</h3>
+                        <p class="text-gray-600 mt-2">Pembelajaran Via Offline Mencakup
+                            Untuk Kelas Akhwat & Ikhwan.</p>
+                        <button onclick="openModal('centerlubuklinggau')"
+                            class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">
+                            Baca Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Pekanbaru -->
+                    <div class="bg-white shadow-lg rounded-lg p-4">
+                        <!-- Swiper Container -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/pekanbaru/foto1.jpg" alt="Gambar Kegiatan" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/pekanbaru/foto2.jpg" alt="Gambar Kegiatan 2" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/pekanbaru/foto3.jpg" alt="Gambar Kegiatan 2" class="rounded-lg">
+                                </div>
+                            </div>
+                            <!-- Swiper Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Deskripsi -->
+                        <h3 class="text-xl font-semibold text-purple-700 mt-4">Center Offline RBAA Mulazamah Mahad Pekan
+                            baru</h3>
+                        <p class="text-gray-600 mt-2">Pembelajaran Via Offline Mencakup
+                            Untuk Kelas Akhwat & Ikhwan.</p>
+                        <button onclick="openModal('centerpekanbaru')"
+                            class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">
+                            Baca Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Jambi -->
+                    <div class="bg-white shadow-lg rounded-lg p-4">
+                        <!-- Swiper Container -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="tentang/foto3.jpeg" alt="Gambar Kegiatan" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/jambi/foto1.jpg" alt="Gambar Kegiatan 2" class="rounded-lg">
+                                </div>
+                            </div>
+                            <!-- Swiper Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Deskripsi -->
+                        <h3 class="text-xl font-semibold text-purple-700 mt-4">Center Offline Jambi</h3>
+                        <p class="text-gray-600 mt-2">Pembelajaran Via Offline Mencakup
+                            Untuk Kelas Akhwat & Ikhwan.</p>
+                        <button onclick="openModal('centerjambi')"
+                            class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">
+                            Baca Selengkapnya
+                        </button>
+                    </div>
+                    <!-- Papua -->
+                    <div class="bg-white shadow-lg rounded-lg p-4">
+                        <!-- Swiper Container -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/papua/foto1.jpeg" alt="Gambar Kegiatan" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/papua/foto2.jpeg" alt="Gambar Kegiatan 2" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/papua/foto3.jpeg" alt="Gambar Kegiatan 3" class="rounded-lg">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="kegiatan/papua/foto4.jpeg" alt="Gambar Kegiatan 7" class="rounded-lg">
+                                </div>
+                            </div>
+                            <!-- Swiper Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Deskripsi -->
+                        <h3 class="text-xl font-semibold text-purple-700 mt-4">Center Offline Nabire, PapuaTengah</h3>
+                        <p class="text-gray-600 mt-2">Pembelajaran Via Offline Mencakup
+                            Untuk Kelas Akhwat & Ikhwan.</p>
+                        <button onclick="openModal('centerpapua')"
+                            class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">
+                            Baca Selengkapnya
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="py-36"></div>
+        </section>
+        <!-- Modals -->
+        <div class="mb-4 py-2">
+            <div id="centerOnline"
+                class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg">
+                    <h3 class="text-2xl font-bold text-purple-700">Detail Center Online</h3>
+                    <p class="mt-4 text-gray-600">
+                        Pembelajaran via Zoom mencakup berbagai kelas yang dirancang untuk Akhwat dan Ikhwan, yaitu:
+                    </p>
+                    <ul class="list-disc pl-5 mt-4 text-gray-600">
+                        <li>Kelas Ilmu Al-Quran</li>
+                        <li>Kelas Tahfidz</li>
+                        <li>Kelas Bahasa Arab</li>
+                        <li>Kelas Ilmu Syari</li>
+                        <li>Kelas Dauroh</li>
+                        <li>Kelas Privat</li>
+                    </ul>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Kegiatan:</strong> Dilaksanakan secara pembelajaran perkelas melalui Zoom.
+                        <br>
+                        <strong>Durasi Belajar:</strong> 90 menit
+                        <br>
+                        <strong>Frekuensi:</strong> 1x sepekan atau 4x dalam sebulan
+                        <br>
+                        <strong>Tempat Belajar:</strong> Via Zoom
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Contact Informasi:</strong>
+                        <br> Wiwin Winarti - 085266006644
+                        <br> Dita Asmara - 08115236006
+                    </p>
+                    <button onclick="closeModal('centerOnline')"
+                        class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">Tutup</button>
+                </div>
+            </div>
+            <div id="centerJakarta"
+                class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg">
+                    <h3 class="text-2xl font-bold text-purple-700">Detail Center Offline Jakarta</h3>
+                    <p class="mt-4 text-gray-600">
+                        Pembelajaran via offline mencakup berbagai kelas yang dirancang untuk Akhwat dan Ikhwan, yaitu:
+                    </p>
+                    <ul class="list-disc pl-5 mt-4 text-gray-600">
+                        <li>Kelas Ilmu Al-Quran</li>
+                        <li>Kelas Tahfidz</li>
+                        <li>Kelas Bahasa Arab</li>
+                        <li>Kelas Ilmu Syari</li>
+                        <li>Kelas Dauroh</li>
+                        <li>Kelas Privat</li>
+                    </ul>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Kegiatan:</strong> Dilaksanakan secara pembelajaran perkelas secara offline.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Tempat Belajar:</strong>
+                        <br>*RBAA Bunayyah Center*
+                        <br> *Yayasan Raudhatul Quran Bunayyah*
+                        <br>
+                        <strong>Alamat Mahad Center:</strong>
+                        <br> RBAA Bunayyah Center Jakarta
+                        <br> Komp Kedaung Hijau Blok F No 2 - Ciputat
+                        <br> Tangerang Selatan
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        <strong>No Contact Informasi:</strong>
+                        <br> Ustadzah Masayu Zulaiha, SE - 0813-6712-1488
+                    </p>
+                    <button onclick="closeModal('centerJakarta')"
+                        class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">Tutup</button>
+                </div>
+            </div>
+            <div id="centermuaraenim"
+                class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg">
+                    <h3 class="text-2xl font-bold text-purple-700">Detail Center Offline Muara Enim</h3>
+                    <p class="mt-4 text-gray-600">
+                        Pembelajaran via offline mencakup berbagai kelas yang dirancang untuk Akhwat dan Ikhwan, yaitu:
+                    </p>
+                    <ul class="list-disc pl-5 mt-4 text-gray-600">
+                        <li>Kelas Ilmu Al-Quran</li>
+                        <li>Kelas Tahfidz</li>
+                        <li>Kelas Bahasa Arab</li>
+                        <li>Kelas Ilmu Syari</li>
+                        <li>Kelas Dauroh</li>
+                        <li>Kelas Privat</li>
+                    </ul>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Kegiatan:</strong> Dilaksanakan secara pembelajaran perkelas secara offline.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Tempat Belajar:</strong>
+                        <br> *RBAA Bunayyah Center*
+                        <br> *Yayasan Raudhatul Quran Bunayyah*
+                        <br>
+                        <strong>Alamat Mahad Center:</strong>
+                        <br> RBAA Bunayyah Center Muara Enim
+                        <br> Jalan Karet No 15 (Ruko Ibu Ani Funiture)
+                        <br> Kelurahan Air Lintang, Kecamatan Muara Enim, Kab. Muara Enim (Sumatera Selatan)
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        <strong>No Contact Informasi:</strong>
+                        <br> Delvika Oktarya - 08126745475
+                    </p>
+                    <button onclick="closeModal('centermuaraenim')"
+                        class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">Tutup</button>
+                </div>
+            </div>
+            <div id="centerlubuklinggau"
+                class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+                <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg">
+                    <h3 class="text-2xl font-bold text-purple-700">Detail Center Offline Lubuk Linggau</h3>
+                    <p class="mt-4 text-gray-600">
+                        Pembelajaran via offline mencakup berbagai kelas yang dirancang untuk Akhwat dan Ikhwan, yaitu:
+                    </p>
+                    <ul class="list-disc pl-5 mt-4 text-gray-600">
+                        <li>Kelas Ilmu Al-Quran</li>
+                        <li>Kelas Tahfidz</li>
+                        <li>Kelas Bahasa Arab</li>
+                        <li>Kelas Ilmu Syari</li>
+                        <li>Kelas Dauroh</li>
+                        <li>Kelas Privat</li>
+                    </ul>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Kegiatan:</strong> Dilaksanakan secara pembelajaran perkelas secara offline.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Tempat Belajar:</strong>
+                        <br>*RBAA Bunayyah Center*
+                        <br> *Yayasan Raudhatul Quran Bunayyah*
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Halaqah 1 (Kelas Akhwat):</strong>
+                        <br> Lubuk Aman, Lubuk Linggau Barat 1, Lubuk Linggau, Sumatera Selatan
+                        <br> Gang Ramin Blok G No. 73/74 (Rumah Quran Bunayyah)
+                        <br> ID 31611
+                        <br> <strong>Contact Informasi:</strong> Bella - 085274806245
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        <strong>Halaqah 2 (Kelas Ikhwan):</strong>
+                        <br> Jl. Jati Blok E No. 120, RT 007, Perumnas Tanjung Aman
+                        <br> Lubuk Linggau, Sumatera Selatan
+                        <br> <strong>Contact Informasi:</strong> Abu Jagat - 081317489280
+                    </p>
+                    <button onclick="closeModal('centerlubuklinggau')"
+                        class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">Tutup</button>
+                </div>
+            </div>
+            <div id="centerpekanbaru"
+                class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+                <div class="bg-white w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-lg p-6">
+                    <!-- Modal Header -->
+                    <div class="flex justify-between items-center border-b pb-4">
+                        <h3 class="text-2xl font-bold text-purple-700">Detail Center Offline Pekanbaru</h3>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="mt-4 space-y-4">
+                        <h3 class="text-lg font-semibold">Alamat</h3>
+                        <p>Jalan Sei mintan, Simpang tiga, Bukit Raya, Pekanbaru,Riau</p>
+                        <h3 class="text-lg font-semibold">Kontak Informasi</h3>
+                        <p>081996554785</p>
+                        <h3 class="text-lg font-semibold">Informasi Detail</h3>
+                        <p>Nama Program: Tahfidz 15-30 Juz</p>
+                        <ul class="list-disc pl-5">
+                            <li>Tahfidz 15-30 Juz</li>
+                            <li>Ilmu Bahasa Arab</li>
+                            <li>Ilmu Syari</li>
+                            <li>Tajwid</li>
+                            <li>Fiqh</li>
+                            <li>Hadits</li>
+                            <li>Nahwu</li>
+                        </ul>
+                        <h4 class="text-lg font-semibold mt-3">Sistem Pembelajaran:</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Kelas dimulai dari level pemula</li>
+                            <li>Akses belajar melalui offline dan online (via Zoom Meeting)</li>
+                            <li>Waktu aktif pembelajaran formal: Senin-Jumat</li>
+                            <li>Evaluasi hafalan Qur'an dan matan setiap akhir pekan</li>
+                            <li>Kajian live streaming bersama Ustadz Nuzul Zikri</li>
+                        </ul>
+                        <h4 class="text-lg font-semibold mt-3">Ekstrakurikuler:</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Cooking class</li>
+                            <li>Outdoor</li>
+                            <li>Berbocok tanam</li>
+                            <li>Kegiatan kewirausahaan</li>
+                        </ul>
+                        <h4 class="text-lg font-semibold mt-3">SPP Perbulan berupa infaq wajib:</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Beras 10 kg</li>
+                            <li>Minyak 2 Liter</li>
+                            <li>Gula 1 Kg</li>
+                        </ul>
+
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="mt-6 flex justify-end">
+                        <button onclick="closeModal('centerpekanbaru')"
+                            class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">Tutup</button>
+                    </div>
+                </div>
+            </div>
+            <div id="centerjambi"
+                class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+                <div class="bg-white w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-lg p-6">
+                    <!-- Modal Header -->
+                    <div class="flex justify-between items-center border-b pb-4">
+                        <h3 class="text-2xl font-bold text-purple-700">Detail Center Offline Jambi</h3>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="mt-4 space-y-4">
+                        <!-- Alamat -->
+                        <h3 class="text-lg font-semibold">Alamat</h3>
+                        <p>TP Sriwijaya Komplek Melati 3 No 61, Kelurahan Rawasari, Jambi</p>
+
+                        <!-- Kontak Informasi -->
+                        <h3 class="text-lg font-semibold">Kontak Informasi</h3>
+                        <ul>
+                            <li>Wiwin Winarti: <a href="tel:085266006644" class="text-blue-600">085266006644</a></li>
+                            <li>Sri Sarifah: <a href="tel:085222795497" class="text-blue-600">085222795497</a></li>
+                        </ul>
+
+                        <!-- Kegiatan -->
+                        <h3 class="text-lg font-semibold">Kegiatan</h3>
+                        <p>Dilaksanakan secara offline.</p>
+
+                        <!-- Program Pembelajaran -->
+                        <h4 class="text-lg font-semibold mt-3">Pembelajaran via Offline Mencakup</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Pertemuan Bulanan untuk Dakwah</li>
+                            <li>Pertemuan untuk Ukhuwah</li>
+                        </ul>
+
+                        <!-- Footer -->
+                        <div class="mt-6 flex justify-end">
+                            <button onclick="closeModal('centerjambi')"
+                                class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="centerpapua"
+                class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+                <div class="bg-white w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-lg p-6">
+                    <!-- Modal Header -->
+                    <div class="flex justify-between items-center border-b pb-4">
+                        <h3 class="text-2xl font-bold text-purple-700">Detail Center Offline Nabire, PapuaTengah </h3>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="mt-4 space-y-4">
+                        <!-- Tempat Belajar -->
+                        <h3 class="text-lg font-semibold">Tempat Belajar</h3>
+                        <p>RBAA BUNAYYAH CENTER</p>
+                        <p><strong>YAYASAN RAUDHATUL QURAN BUNAYYAH</strong></p>
+
+                        <!-- Alamat Mahad Center -->
+                        <h3 class="text-lg font-semibold">Alamat Mahad Center</h3>
+                        <p>RBAA Bunayyah Center Nabire-Papua Tengah</p>
+                        <p>Jalan Surabaya Belakang Masjid Raya Alfalah</p>
+
+                        <!-- Kontak Informasi -->
+                        <h3 class="text-lg font-semibold">Kontak Informasi</h3>
+                        <ul>
+                            <li>Maifa Mashud: <a href="tel:081247577884" class="text-blue-600">081247577884</a></li>
+                        </ul>
+
+                        <!-- Kegiatan -->
+                        <h3 class="text-lg font-semibold">Kegiatan</h3>
+                        <p>Dilaksanakan secara pembelajaran per kelas secara offline.</p>
+
+                        <!-- Program Pembelajaran -->
+                        <h4 class="text-lg font-semibold mt-3">Pembelajaran via Offline Mencakup</h4>
+                        <ul class="list-disc pl-5">
+                            <li>Kelas Dasar-Dasar Tilawah</li>
+                            <li>Kelas Tajwid</li>
+                            <li>Kelas Tahsin Juz Amma</li>
+                            <li>Kelas Nol Belajar Bahasa Arab</li>
+                            <li>Kelas Iqra</li>
+                        </ul>
+
+                        <!-- Footer -->
+                        <div class="mt-6 flex justify-end">
+                            <button onclick="closeModal('centerpapua')"
+                                class="bg-purple-700 text-white px-4 py-2 rounded-lg mt-4">Tutup</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modals -->
+        <section id="pendaftaran" class="py-12" data-aos="fade-up" data-aos-duration="1000">
+            <div class="max-w-2xl mx-auto text-center">
+                <!-- Judul Section -->
+                <h2 class="text-4xl font-bold text-purple-700 mb-4">Bergabunglah dengan Kami</h2>
+
+                <!-- Deskripsi Singkat -->
+                <p class="text-lg text-gray-600 mb-6">
+                    Daftarkan diri Anda dan menjadi bagian dari Yayasan Raudhatul Quran Bunayyah. Klik tombol di bawah
+                    untuk melanjutkan proses pendaftaran dan gabung bersama kami!
+                </p>
+
+                <!-- Tombol Pendaftaran -->
+                <a href="https://linktr.ee/rbaabunayyah" target="_blank"
+                    class="inline-block px-6 py-3 bg-purple-700 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out">
+                    Daftar Sekarang <span aria-hidden="true">→</span>
+                </a>
+            </div>
+            <div class="py-36"></div>
+        </section>
+        <section id="rekening" class="px-5" data-aos="fade-up" data-aos-duration="1000">
+            <!-- Konten Rekening Yayasan -->
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-purple-700 mb-8 py-4">Pembangunan Bunayyah Islamic Center</h2>
+
+                <!-- Slider Swiper -->
+                <div class="swiper mySwiper mb-6">
+                    <div class="swiper-wrapper">
+                        <!-- Gambar pertama -->
+                        <div class="swiper-slide">
+                            <img src="tentang/rekening.jpg" alt="Gambar Rekening 1"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <!-- Gambar kedua -->
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto1.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto2.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto3.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto4.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto5.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto6.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto7.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto8.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto9.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="pembangunan/foto10.jpg" alt="Gambar Rekening 2"
+                                class="mx-auto w-full h-auto object-cover rounded-lg shadow-md">
+                        </div>
+                        <!-- Tambahkan gambar lainnya di sini -->
+                    </div>
+                    <!-- Navigasi slider -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg space-y-4">
+                    <!-- Informasi Bank -->
+                    <div class="text-xl font-medium text-gray-700">
+                        <p><span class="font-bold">Bank BSI</span></p>
+                        <p><span class="font-bold">No. Rekening:</span> 7278243658</p>
+                        <p><span class="font-bold">Atas Nama:</span> Raudhatul Quran Bunayyah Center LLG</p>
+                    </div>
+
+                    <!-- Pesan Sebarluaskan -->
+                    <div class="bg-yellow-100 p-4 rounded-md text-sm text-gray-700">
+                        <p class="font-semibold text-gray-800">SILAHKAN DI SEBARLUASKAN</p>
+                    </div>
+
+                    <!-- Hadis -->
+                    <div class="mt-6 p-4 border-t-2 border-gray-200">
+                        <p class="text-gray-600 text-lg italic">Rasulullah Shallallahu’alaihi Wasallam bersabda:</p>
+                        <blockquote class="text-gray-600 text-xl mt-2">
+                            من دَلَّ على خيرٍ فله مثلُ أجرِ فاعلِه
+                        </blockquote>
+                        <p class="text-gray-600 text-lg mt-2">“Barangsiapa yang menunjuki kepada kebaikan maka dia akan
+                            mendapatkan pahala seperti pahala orang yang mengerjakannya” (HR. Muslim no. 1893).</p>
+                    </div>
+
+                    <!-- Deskripsi -->
+                    <div class="text-left mt-8">
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            Bismillah<br>
+                            Assalamualaikum warahmatullahi wabarakatuh<br><br>
+                            Alhamdulillah Allazii Bini'matihi Tatimusholihat. Atas Kemudahan Dari Allah, Progres Tahap
+                            Pertama,
+                            pembukaan lahan ± 3,5 hektar selama 6 hari telah diselesaikan.
+                            <br><br>
+                            Oleh karena itu kami mengajak semua kalangan warga masyarakat di manapun Antum dan Antuna
+                            berada agar
+                            ikut serta berpartisipasi dalam Pembangunan Bunayyah Islamic Center di Desa Noman Kabupaten
+                            Musi
+                            Rawas Utara Provinsi Sumatera Selatan,
+                            <br><br>
+                            Alamat Bunayyah Islamic Center:<br>
+                            Jl. Raya Lintas Utama Sumatera, Noman Baru, Kec. Rupit, Kab. Musi Rawas Utara, Sumatera
+                            Selatan.
+                            <br><br>
+                            Insya Allah yang mana nantinya difungsikan untuk kegiatan belajar dan mengajar ilmu agama.
+                            <br><br>
+                            Dari Abu Hurairah, Rasulullah shallallahu ‘alaihi wa sallam bersabda:
+                        </p>
+                        <blockquote class="text-gray-600 text-lg italic">
+                            إِذَا مَاتَ الإِنْسَانُ انْقَطَعَ عَنْهُ عَمَلُهُ إِلاَّ مِنْ ثَلاَثَةٍ إِلاَّ مِنْ صَدَقَةٍ
+                            جَارِيَةٍ أَوْ عِلْمٍ يُنْتَفَعُ بِهِ أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ
+                        </blockquote>
+                        <p class="text-lg mt-2">
+                            “Jika manusia itu mati, maka akan putus amalannya kecuali dari tiga perkara: [1] sedekah
+                            jariyah,
+                            [2] ilmu yang diambil manfaatnya, [3] anak sholih yang mendo’akan orang tuanya.” HR. Muslim
+                            no.
+                            1631
+                        </p>
+                        <p class="text-lg mt-4">Jadikan Kesempatan Terbaik ini mencari Amal jariyah.</p>
+                        <p class="font-semibold text-gray-800 mt-4">Salurkan Donasi Terbaik anda ke Rekening:</p>
+                        <p class="text-lg font-bold text-gray-800">Bank Syariah Indonesia (BSI)</p>
+                        <p class="text-lg">An. Raudhatul Quran Bunayyah LLG:</p>
+                        <p class="text-lg font-bold">Nomor rekening: 7278243658</p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-36"></div>
+        </section>
+        <section id="lokasi" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container mx-auto px-4 mb-4 py-2">
+                <h2 class="text-4xl font-bold text-center text-purple-700 mb-8">Lokasi Yayasan</h2>
+            </div>
+            <div class="container mx-auto px-4">
+                <h2 class="text-lg font-sans text-center mb-8">Komplek Kedaung Hijau Blok F 02, RT03, RW.05, Ciputat,
+                    Kec. Ciputat, Banten 51415.</h2>
+            </div>
+            <div class="flex items-center justify-center  px-4">
+                <!-- Peta -->
+                <div class="w-full md:w-4/5 mb-8 md:mb-0 shadow-2xl rounded-xl">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4492.250928975001!2d106.7403645!3d-6.3196512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef30058c4ebd%3A0xa430e9c463a16a8b!2sRBAA%20Rumah%20Belajar%20Al-Quran%20Al-Bunnayyah!5e1!3m2!1sid!2sid!4v1733658539348!5m2!1sid!2sid"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="py-36"></div>
+        </section>
+        <section id="kontak" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-purple-700 mb-8">Kontak Yayasan</h2>
+                <div class="space-y-6">
+                    <p class="text-lg text-center text-slate-700 font-semibold">Informasi Pendaftaran Halaqah Center
+                        Online & Offline <span aria-hidden="true">→</span></p>
+                    <!-- Kontak Person -->
+                    <div class="space-y-4">
+                        <div class="text-center py-2">
+                            <p class="text-2xl font-semibold text-purple-700">Wiwin Winarti</p>
+                            <div class="flex space-x-4 justify-center">
+                                <!-- Tombol Telepon -->
+                                <a href="tel:+6285266006644"
+                                    class="flex items-center space-x-2 text-purple-700 hover:text-purple-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                    </svg>
+                                    <span>Telepon</span>
+                                </a>
+                                <!-- Tombol WhatsApp -->
+                                <a href="https://wa.me/6285266006644"
+                                    class="flex items-center space-x-2 text-green-500 hover:text-green-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                    </svg>
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center py-2">
+                            <p class="text-2xl font-semibold text-purple-700">Septia Sekar Sari</p>
+
+                            <div class="flex space-x-4 justify-center">
+                                <!-- Tombol Telepon -->
+                                <a href="tel:+6288706831119"
+                                    class="flex items-center space-x-2 text-purple-700 hover:text-purple-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                    </svg>
+                                    <span>Telepon</span>
+                                </a>
+                                <!-- Tombol WhatsApp -->
+                                <a href="https://wa.me/6288706831119"
+                                    class="flex items-center space-x-2 text-green-500 hover:text-green-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                    </svg>
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-center py-2">
+                            <p class="text-2xl font-semibold text-purple-700">Dita Asmara</p>
+                            <div class="flex space-x-4 justify-center">
+                                <!-- Tombol Telepon -->
+                                <a href="tel:+628115236006"
+                                    class="flex items-center space-x-2 text-purple-700 hover:text-purple-900">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                    </svg>
+                                    <span>Telepon</span>
+                                </a>
+                                <!-- Tombol WhatsApp -->
+                                <a href="https://wa.me/628115236006"
+                                    class="flex items-center space-x-2 text-green-500 hover:text-green-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                    </svg>
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-36"></div>
+        </section>
+        <section id="copyright" data-aos="fade-up" data-aos-duration="1000>
+            <div class=" container mx-auto px-4">
+            <h2 class="text-lg font-semibold text-center mb-8">© 2024 Yayasan Raudhatul Quran Bunayyah.
+                All rights reserved.</h2>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Inisialisasi AOS setelah halaman dimuat
+        AOS.init();
+    </script>
+</body>
+
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    });
+</script>
+<script>
+    // JavaScript untuk toggle dropdown menu saat menu hamburger diklik
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden'); // Toggle menu visibility
+    });
+</script>
+<script>
+    window.onload = function () {
+        // Cek apakah ada hash di URL
+        if (window.location.hash === "") {
+            // Jika tidak ada hash, arahkan ke #selamat-datang
+            window.location.hash = "#selamat-datang";
+        } else if (window.location.hash !== "#selamat-datang") {
+            // Jika ada hash tetapi bukan #selamat-datang, ubah ke #selamat-datang
+            window.location.hash = "#selamat-datang";
+        }
+
+        // Tunggu sedikit agar elemen bisa diproses, lalu scroll ke elemen dengan ID yang sesuai
+        setTimeout(function () {
+            if (window.location.hash) {
+                const element = document.querySelector(window.location.hash);
+
+                // Hitung offset (tinggi header atau elemen yang fixed)
+                const headerHeight = document.querySelector('header')
+                    .offsetHeight; // Ubah jika header Anda berbeda
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        }, 100); // Waktu tunggu untuk memastikan elemen sudah diproses
+    };
+</script>
+<!-- Script for Modal -->
+<script>
+    function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+    }
+
+    function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+    }
+</script>
+<!-- Swiper.js Initialization -->
+<script>
+    const swiper = new Swiper('.mySwiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        loop: true,
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Typed("#typed-text", {
+            strings: ["Information System", "Marketing", "Web Developer", "IT Support"],
+            typeSpeed: 50, // Kecepatan mengetik (milidetik)
+            backSpeed: 30, // Kecepatan menghapus (milidetik)
+            backDelay: 2000, // Jeda sebelum mengetik ulang (milidetik)
+            loop: true // Mengulangi efek tanpa henti
+        });
+    });
+</script>
