@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <header class=" sticky top-0 z-10 bg-white text-lg font-sans ">
-        <div class="container mx-auto flex items-center justify-start py-4 px-6 lg:justify-center ">
+    <header class="sticky top-0 z-10 bg-white text-lg font-sans">
+        <div class="container mx-auto flex items-center justify-start md:justify-center py-4 px-6">
             <!-- Hamburger Icon for Mobile -->
             <div class="lg:hidden">
                 <button id="hamburger" class="text-blue-600 focus:outline-none">
@@ -31,6 +31,7 @@
                     </svg>
                 </button>
             </div>
+
             <!-- Navigation Links (Visible on desktop) -->
             <nav class="hidden lg:flex space-x-8">
                 <a href="#tentang-saya"
@@ -42,9 +43,10 @@
                 <a href="#kontak"
                     class="hover:text-red-500 font-medium hover:border-b-2 hover:border-red-500">Kontak</a>
             </nav>
+
             <!-- Dropdown Menu for Mobile (Hidden by default) -->
             <div id="mobile-menu"
-                class="lg:hidden hidden absolute top-16 bg-white shadow-md py-4 px-6 rounded-lg space-y-4 ">
+                class="lg:hidden hidden absolute top-16 bg-white shadow-md py-4 px-6 rounded-lg space-y-4">
                 <!-- Navigasi Vertikal -->
                 <a href="#tentang-saya" class="block hover:text-blue-700 font-medium">Tentang Saya</a>
                 <a href="#pengurus" class="block hover:text-red-500 font-medium">Resume</a>
@@ -72,7 +74,7 @@
                         <span id="typed-text">Web Developer</span>
                     </h2>
                     <!-- Buttons -->
-                    <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-4 mb-10">
                         <a href="#tentang-saya  "
                             class="bg-blue-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-red-500 flex items-center space-x-2 w-fit">
                             <span>Tentang Saya</span>
@@ -87,7 +89,7 @@
                 </div>
 
                 <!-- Logo/Image -->
-                <div class="order-2 md:order-2 md:w-1/3">
+                <div class="order-2 md:order-2 md:w-1/3 w-2/3 md:py-0 ">
                     <img src="foto/formal2.png" alt="Kegiatan Yayasan" class="mx-auto md:mb-0">
                 </div>
             </div>
@@ -96,7 +98,6 @@
                 <div class="absolute inset-0 border-t border-blue-500"></div>
                 <span class="relative text-xl font-semibold text-blue-500 bg-white px-4">2024</span>
             </div>
-            <div class="py-14"></div>
         </section>
         <section id="tentang-saya" data-aos="fade-up" data-aos-duration="1000" class="relative py-12">
             <div class="relative w-fit mx-auto mb-8">
@@ -113,12 +114,12 @@
                     <img src="foto/tentangsaya.png" alt="Foto Saya" class="mx-auto ">
                 </div>
                 <!-- Penjelasan Tentang Saya di Sebelah Kanan -->
-                <div class="order-2 md:order-2 md:w-1/2 text-justify md:text-justify">
-                    <p class="text-2xl text-gray-700 leading-relaxed">
+                <div class="order-2 md:order-2 md:w-1/2 font-sans text-justify md:text-justify">
+                    <p class="text-base md:text-2xl text-gray-700 leading-relaxed">
                         Halo, saya <span class="text-blue-600 font-semibold">Muhammad Erlangga</span>, fresh graduate
-                        dari program
-                        <span class="font-semibold">Sistem Informasi Universitas Andalas</span> dengan ketertarikan kuat
-                        pada
+                        dari
+                        program <span class="font-semibold">Sistem Informasi Universitas Andalas</span> dengan
+                        ketertarikan kuat pada
                         <span class="font-semibold">pengembangan web, analisis bisnis, dan pemasaran</span>. Saya
                         memiliki pengalaman
                         berharga selama 6 bulan magang di <span class="font-semibold">PT Semen Padang</span> melalui
@@ -127,15 +128,16 @@
                         Support dan
                         membantu tugas-tugas yang berkaitan dengan <span class="font-semibold">HR</span>.
                     </p>
-                    <p class="mt-4 text-2xl text-gray-700 leading-relaxed">
+                    <p class="mt-4 text-base md:text-2xl text-gray-700 leading-relaxed">
                         Selain itu, saya juga menyelesaikan magang selama 3 bulan di kantor pemerintahan, di mana saya
-                        turut serta
-                        dalam pengembangan sistem informasi dan meningkatkan keterampilan teknis saya. Saya antusias
-                        untuk terus belajar
-                        dan menggunakan keahlian saya di bidang teknologi, bisnis, dan pemasaran untuk memberikan dampak
+                        turut serta dalam
+                        pengembangan sistem informasi dan meningkatkan keterampilan teknis saya. Saya antusias untuk
+                        terus belajar dan
+                        menggunakan keahlian saya di bidang teknologi, bisnis, dan pemasaran untuk memberikan dampak
                         positif.
                     </p>
                 </div>
+
             </div>
             <!-- Background Shape (Abstrak) -->
             <div
@@ -145,6 +147,60 @@
                 <div class="absolute inset-0 border-t border-blue-500"></div>
                 <span class="relative text-xl font-semibold text-blue-500 bg-white px-4">2024</span>
             </div>
+        </section>
+        <section id="pendidikan" data-aos="fade-up" data-aos-duration="1000">
+            <div class="relative w-fit mx-auto mb-8 justify-center">
+                <h2 class="text-4xl font-bold text-center ">
+                    <span class="text-blue-600">Pendidikan</span>
+                    <span class="text-red-600">Saya</span>
+                </h2>
+                <div class="absolute left-1/2 -translate-x-1/2 translate-y-[10px] w-32 h-[2px] bg-black rounded-full">
+                </div>
+            </div>
+            <div class="container mx-auto flex flex-col md:flex-row items-center py-4">
+                <!-- Bagian Kiri (Teks dan Alur Pendidikan) -->
+                <div class="w-full md:w-1/2 flex flex-col items-center md:items-center relative">
+                    <!-- Garis Alur Pendidikan -->
+                    <div class="relative w-full">
+                        <!-- Titik dan Garis dengan Gelombang atau Cahaya -->
+                        <div class="flex flex-col items-center space-y-16">
+                            <!-- SMA -->
+                            <div class="flex flex-col items-center space-y-4">
+                                <p class="text-lg font-medium text-center md:text-left">SMA Negeri 6 Palembang</p>
+                                <p class="text-sm font-medium text-center md:text-left">MIPA | 2017 - 2020</p>
+                                <div class="w-8 h-8 bg-blue-500 rounded-full shadow-lg animate-pulse"></div>
+
+                            </div>
+                            <div class="absolute left-1/2 -translate-x-1/2 top-12">
+                                <div class="w-[2px] h-32 bg-blue-500"></div>
+                            </div>
+                            <!-- Gelombang Cahaya -->
+                            <div class="absolute left-1/2 -translate-x-1/2 top-56 animate-pulse">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 25" fill="none">
+                                    <path d="M0 13 Q 50 0 100 13 Q 150 25 200 13" stroke="blue" stroke-width="2"
+                                        fill="none" />
+                                </svg>
+                            </div>
+                            <!-- Universitas Andalas -->
+                            <div class="flex flex-col items-center space-y-4 py-16">
+                                <div class="w-8 h-8 bg-blue-500 rounded-full shadow-lg animate-pulse"></div>
+                                <p class="text-lg font-medium text-center md:text-left">Universitas Andalas</p>
+                                <p class="text-sm font-medium text-center md:text-left">Sistem Informasi | 3.72 |
+                                    2020 - 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bagian Kanan (Foto) -->
+                <div class="order-2 md:order-2 md:w-1/2 w-2/3 md:py-0 ">
+                    <img src="foto/pendidikan.png" alt="Kegiatan Yayasan" class="mx-auto md:mb-0">
+                </div>
+            </div>
+            <div class="relative  flex items-center justify-center">
+                <div class="absolute inset-0 border-t border-blue-500"></div>
+                <span class="relative text-xl font-semibold text-blue-500 bg-white px-4">2024</span>
+            </div>
+            <div class="py-14"></div>
         </section>
         <section id="pengalaman" data-aos="fade-up" data-aos-duration="1000">
             <div class="relative w-fit mx-auto mb-8">
@@ -210,12 +266,9 @@
     });
 </script>
 <script>
-    // JavaScript untuk toggle dropdown menu saat menu hamburger diklik
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden'); // Toggle menu visibility
+    document.getElementById('hamburger').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
     });
 </script>
 <script>
@@ -275,7 +328,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         new Typed("#typed-text", {
-            strings: ["Information System", "Marketing", "Web Developer", "IT Support"],
+            strings: ["Information System", "Marketing", "Sales", "Web Developer", "IT Support"],
             typeSpeed: 50, // Kecepatan mengetik (milidetik)
             backSpeed: 30, // Kecepatan menghapus (milidetik)
             backDelay: 2000, // Jeda sebelum mengetik ulang (milidetik)
